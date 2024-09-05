@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de personnalité MBTI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Test de personnalité MBTI</h1>
+    <form id="mbtiTest">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. Comment préférez-vous généralement recharger votre énergie ?</p>
+        <label><input type="radio" name="q1" value="E"> En étant avec d'autres personnes, en participant à des activités sociales.</label><br>
+        <label><input type="radio" name="q1" value="I"> En passant du temps seul, en faisant des activités calmes et personnelles.</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Quand vous êtes confronté à un problème, comment avez-vous tendance à le résoudre ?</p>
+        <label><input type="radio" name="q2" value="S"> En vous concentrant sur les faits et les détails concrets.</label><br>
+        <label><input type="radio" name="q2" value="N"> En voyant le problème dans son ensemble, en vous appuyant sur des intuitions ou des théories.</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. Comment prenez-vous généralement des décisions ?</p>
+        <label><input type="radio" name="q3" value="T"> En vous basant sur la logique et l'objectivité, en considérant ce qui est le plus juste.</label><br>
+        <label><input type="radio" name="q3" value="F"> En prenant en compte vos émotions et les sentiments des autres, en cherchant l'harmonie.</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. Dans votre vie quotidienne, comment préférez-vous vous organiser ?</p>
+        <label><input type="radio" name="q4" value="J"> Vous aimez planifier à l'avance et suivre un emploi du temps strict.</label><br>
+        <label><input type="radio" name="q4" value="P"> Vous préférez être flexible et vous adapter aux situations au fur et à mesure.</label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="button" onclick="calculateMBTI()">Obtenir mon résultat</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
